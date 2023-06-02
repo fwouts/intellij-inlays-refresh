@@ -1,0 +1,12 @@
+<idea-plugin>
+    <id>com.fwouts.intellij.inlays</id>
+    <name>Inlays Refresh</name>
+
+    <!-- Product and plugin compatibility requirements -->
+    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.inlayProviderFactory implementation="com.fwouts.intellij.inlays.InlayProviderFactory" />
+    </extensions>
+</idea-plugin>
